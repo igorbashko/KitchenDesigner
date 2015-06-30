@@ -1,0 +1,88 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 12, 2014, 12:32:03 PM
+    Author     : igor
+*/
+body{
+ /*background: url(images/Fronts/cristallo_mod_01_2.jpg);  
+ background-size: 100%;*/
+}
+
+.background{
+width: 99.6%;
+height: 95%;   
+    position: absolute;
+    //background-color: red;
+   background: url(Kitchens/9140.jpg);
+     -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    min-width: 930px;
+    min-height: 900px;
+    background-position: right;
+    overflow: no-content;
+    
+}
+
+.background2{
+width: 99.6%;
+height: 95%;   
+    position: absolute;
+    //background-color: red;
+   background: url(Kitchens/9140.jpg);
+     -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    min-width: 930px;
+    min-height: 900px;
+    background-position: right;
+    overflow: no-content;
+    
+}
+#overlay{
+ width:100%;
+height:100%;
+position:fixed;
+top:0;
+left:0;
+//display:none;
+background:#000;
+opacity:.8;
+z-index: 5;
+}
+
+.img_wrap{
+margin-top:10px auto;
+width:100%;
+overflow:auto;
+}
+
+.popUP{
+padding:5px 15px 15px;
+position:relative;
+top:100px;
+left:50%;
+display:none;
+/*overflow:hidden; */
+border:1px solid #ccc;
+background:#fff;
+z-index: 10;
+}
+.front{
+margin-left:-320px;
+width:640px;
+height: 500px;
+overflow:auto;
+position:absolute;
+}
+.img_wrap img {
+margin:0 10px 10px;
+height:130px;
+cursor: pointer;
+}
