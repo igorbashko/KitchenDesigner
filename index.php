@@ -12,12 +12,17 @@
 
 <script type="text/javascript" src="JS/appearance.js" ></script>
 </head>
+
 <body>
-    <div class="background2"></div>
+    <div class="background2">
     <div class="background">
-     <a class="popUPS" rel="front" href="#"><img src="close.png"/></a>
+        <div id="Button1">
+     <a id="popUPS" rel="front" href="#"><img src="close.png"/></a>
+     </div>
+        
     </div>
-    
+    </div>
+   
     <div class="popUP front">
       <a class="close" href="#">Close</a>
     <h2>Выбирите столешницу</h2>
@@ -26,14 +31,13 @@
     <?php
     require_once 'PHP/ChangePicture.php';
     $galler = new ChangPicture();
-    $galler->changePicture("Colors");
-    //$galler->changePicture("images/Fronts");
+    $galler->changePicture("images/Colors");
      ?>
-    </div>
+            </div>
 </div>
    <script>
      $(document).ready(function (){
-         $('a.popUPS').click(function(){
+         $('a#popUPS').click(function(){
              var i = $(this).attr("rel");
              
              $('div.'+i).fadeIn(900);
@@ -55,4 +59,6 @@
        })   
     </script>
     
- </body></html>
+ </body>
+
+</html>

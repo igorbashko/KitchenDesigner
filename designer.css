@@ -7,34 +7,41 @@ and open the template in the editor.
     Created on : Aug 12, 2014, 12:32:03 PM
     Author     : igor
 */
+html{
+margin: 0px;
+padding: 0px;
+border: 0px none;
+font-size: 17px;
+vertical-align: baseline;
+background: none no-repeat;
+}
 body{
- /*background: url(images/Fronts/cristallo_mod_01_2.jpg);  
- background-size: 100%;*/
+
 }
 
 .background{
-width: 99.6%;
-height: 95%;   
-    position: absolute;
+//width: 99.6%;
+//height: 95%;   
+    //position: absolute;
     //background-color: red;
-   background: url(Kitchens/9140.jpg);
-     -moz-background-size: 100%; /* Firefox 3.6+ */
+   background: url(images/KitchenParts/Parts1/9141_1.png) no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
     background-size: 100%; /* Современные браузеры */
     min-width: 930px;
     min-height: 900px;
     background-position: right;
-    overflow: no-content;
+    //overflow: no-content;
     
 }
 
 .background2{
 width: 99.6%;
 height: 95%;   
-    position: absolute;
+    //position: absolute;
     //background-color: red;
-   background: url(Kitchens/9140.jpg);
+   background: url(images/Kitchens/9140.jpg) no-repeat;
      -moz-background-size: 100%; /* Firefox 3.6+ */
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
@@ -42,7 +49,7 @@ height: 95%;
     min-width: 930px;
     min-height: 900px;
     background-position: right;
-    overflow: no-content;
+    //overflow: no-content;
     
 }
 #overlay{
@@ -85,4 +92,8 @@ position:absolute;
 margin:0 10px 10px;
 height:130px;
 cursor: pointer;
+}
+#Button1{
+    padding-left: 150px;
+    padding-top: 120px;
 }
