@@ -9,8 +9,8 @@ class ChangPicture{
         $files = preg_grep('/^([^.])/', scandir($directory));
         foreach ($files as $value){
             $path = realpath($directory);
-            $partName = substr($value, 0, -3);
-            echo "<img class='click' alt=images/KitchenParts/Parts1/$partName src=images/Colors/$value title=yaees/>";
+            $partName = substr($value, 0, -4);
+            echo "<img class='click' alt=images/KitchenParts/Parts1/$partName.png src=images/Colors/$value title=yaees/>";
        }
     }
 }
