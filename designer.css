@@ -20,11 +20,7 @@ body{
 }
 
 .background{
-//width: 99.6%;
-//height: 95%;   
-    //position: absolute;
-    //background-color: red;
-   background: url(images/KitchenParts/Parts1/9141_1.png) no-repeat;
+   background: url(images/KitchenParts/Parts1/9140.png) no-repeat;
     -moz-background-size: 100%; /* Firefox 3.6+ */
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
@@ -32,16 +28,14 @@ body{
     min-width: 930px;
     min-height: 900px;
     background-position: right;
-    //overflow: no-content;
+   margin-bottom: -899px;
     
 }
 
 .background2{
-width: 99.6%;
-height: 95%;   
-    //position: absolute;
-    //background-color: red;
-   background: url(images/Kitchens/9140.jpg) no-repeat;
+//width: 99.6%;
+//height: 95%;   
+    background: url(images/KitchenParts/Parts1/9140.png) no-repeat;
      -moz-background-size: 100%; /* Firefox 3.6+ */
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
@@ -49,9 +43,44 @@ height: 95%;
     min-width: 930px;
     min-height: 900px;
     background-position: right;
+    margin-bottom: -899px;
     //overflow: no-content;
-    
+}    
+    .background3{
+//width: 99.6%;
+//height: 95%;   
+    background: url(images/KitchenParts/Part2/9140.png) no-repeat;
+     -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    min-width: 930px;
+    min-height: 900px;
+    background-position: right;
+    margin-bottom: -899px;
 }
+ #background4{
+   background: url(images/KitchenParts/Part4/9140.png) no-repeat;
+     -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    min-width: 930px;
+    min-height: 900px;
+    background-position: right;
+    margin-bottom: -899px;
+ }
+ #background5{
+   background: url(images/KitchenParts/Part3/9140.png) no-repeat;
+     -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    min-width: 930px;
+    min-height: 900px;
+    background-position: right;
+    //margin-bottom: -899px;  
+ }
 #overlay{
  width:100%;
 height:100%;
@@ -95,5 +124,9 @@ cursor: pointer;
 }
 #Button1{
     padding-left: 150px;
-    padding-top: 120px;
+    padding-top: 90px;
+}
+#Button2{
+   padding-left: 550px;
+    padding-top: 90px; 
 }

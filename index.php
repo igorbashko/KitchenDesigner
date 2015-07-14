@@ -15,14 +15,19 @@
 
 <body>
     <div class="background2">
+        </div>
     <div class="background">
         <div id="Button1">
-     <a id="popUPS" rel="front" href="#"><img src="close.png"/></a>
+     <a class="popUPS" rel="front" href="#"><img src="close.png"/></a>
      </div>
-        
     </div>
+    <div class="background3">
+        <div id="Button2">
+            <a class="popUPS" rel="front" href="#"><img src="close.png"></a>
+        </div>
     </div>
-   
+    <div  id="background4"></div>
+    <div id="background5"></div> 
     <div class="popUP front">
       <a class="close" href="#">Close</a>
     <h2>Выбирите столешницу</h2>
@@ -37,7 +42,7 @@
 </div>
    <script>
      $(document).ready(function (){
-         $('a#popUPS').click(function(){
+         $('a.popUPS').click(function(){
              var i = $(this).attr("rel");
              
              $('div.'+i).fadeIn(900);

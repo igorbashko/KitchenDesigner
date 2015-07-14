@@ -10,6 +10,6 @@ $(document).ready(function(){
       $('.background').fadeTo('fast', 0.0, function(){
        $(this).css("background","url(" + src + ") repeat scroll center /100%");
       }).fadeTo(800, 1);
-            //setTimeout(function(){$('.background2').css("background","url(" + src + ") repeat scroll center /100%")}, 1000);
+            setTimeout(function(){$('.background2').css("background","url(" + src + ") repeat scroll center /100%")}, 1000);
    });
 })
