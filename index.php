@@ -18,12 +18,12 @@
         </div>
     <div class="background">
         <div id="Button1">
-     <a class="popUPS" rel="front" href="#"><img src="close.png"/></a>
+     <a class="popUPS" id="button1" rel="front" href="#"><img src="close.png"/></a>
      </div>
     </div>
     <div class="background3">
         <div id="Button2">
-            <a class="popUPS" rel="front" href="#"><img src="close.png"></a>
+            <a class="popUPS" id="button2" rel="front" href="#"><img src="close.png"></a>
         </div>
     </div>
     <div  id="background4"></div>
@@ -37,16 +37,20 @@
     require_once 'PHP/ChangePicture.php';
     $galler = new ChangPicture();
     $galler->changePicture("images/Colors");
+  // $galler->writeToFile("JsonDatabase/Part1.txt");
+  // $galler->writeToFile("JsonDatabase/Part2.txt");
+   //$galler->writeToFile("JsonDatabase/Part3.txt");
      ?>
             </div>
 </div>
    <script>
-     $(document).ready(function (){
-         $('a.popUPS').click(function(){
+    var point;  
+    $(document).ready(function (){
+             $('a.popUPS').click(function(){
              var i = $(this).attr("rel");
-             
+             point = $(this).attr('id');
              $('div.'+i).fadeIn(900);
-             // console.log(i);
+              //console.log(point);
           
              
           $("body").append("<div id='overlay'></div>");
