@@ -15,12 +15,25 @@ $(document).ready(function(){
             path="images/KitchenParts/Part2/"
           background1 = ".background4";
           background2 = ".background3";
+        }else if(point === 'button3' ){
+            path="images/KitchenParts/Part3/";
+            background1 = ".background5";
+            background2 = ".background6";
+        }else if(point === "button4"){
+            path = "images/KitchenParts/Part4/";
+            background1="#background7";
+            background2="#background8";
+        }else if(point ==="button5"){
+           path ="images/KitchenParts/Stones/";
+           background1 ="#background9";
+           background2="#background10";
         }
         var src = path + $(this).attr('alt');
         console.log(path);
-        console.log(src);
+        console.log(popUPName);
         $('#overlay').remove();
-        $('.front').fadeOut(500);
+        var tagName = "."+popUPName;
+        $(tagName).fadeOut(500);
       $(background1).fadeTo('fast', 0.0, function(){
        $(this).css("background","url("+ src + ") repeat scroll center /100%");
       }).fadeTo(800, 1);

@@ -12,7 +12,7 @@ class ChangPicture{
         foreach ($files as $value){
             $path = realpath($directory);
             $partName = substr($value, 0, -4);
-            echo "<img class='click' alt=$partName.png src=images/Colors/$value title=yaees/>";
+           echo "<img class='click' alt=$partName.png src=$directory/$value title=yaees/>";
             $this->list1[$value] = $partName.".png";
          }/*
          $listFile = \fopen("JsonDatabase/Part2.txt", "w") or die ("Doesn't work'");

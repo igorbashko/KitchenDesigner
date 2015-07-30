@@ -14,23 +14,41 @@
 </head>
 
 <body>
+    <div id="background0"></div>
     <div class="background2">
         </div>
     <div class="background">
         <div id="Button1">
-     <a class="popUPS" id="button1" rel="front" href="#"><img src="close.png"/></a>
+            <a class="popUPS" id="button1" rel="front" href="#"><img src="images/icons/click.png"/></a>
      </div>
     </div>
-    <div class="background3">
+    <div id="background9"></div>
+    <div id ="background10"></div>
+    <div class="background3"></div>
+    <div class="background4">
         <div id="Button2">
-            <a class="popUPS" id="button2" rel="front" href="#"><img src="close.png"></a>
+            <a class="popUPS" id="button2" rel="front" href="#"><img src="images/icons/click.png"></a>
         </div>
     </div>
-    <div  id="background4"></div>
-    <div id="background5"></div> 
+     
+    <div class="background5"></div> 
+    <div class="background6">
+        <div id="Button3">
+            <a class="popUPS" id="button3" rel="front" href="#"><img src="images/icons/click.png"></a>
+        </div>
+    </div>
+    <div id="background7"></div>
+    <div id="background8"></div>
+   
+    <div id="Button4">
+        <a class="popUPS" id="button4" rel="front" href="#"><img src="images/icons/click.png"></a>
+    </div>
+    <div id="Button5">
+        <a class="popUPS" id="button5" rel="stone" href="#"><img src="images/icons/click.png"></a>
+    </div>
     <div class="popUP front">
-      <a class="close" href="#">Close</a>
-    <h2>Выбирите столешницу</h2>
+        <a class="close" href="#"><img src="images/icons/close.png"></a>
+    <h2>Выбирите цвет фасада</h2>
     <div class="img_wrap">   
     
     <?php
@@ -43,27 +61,42 @@
      ?>
             </div>
 </div>
+    <div class="popUP stone">
+        <a class="close" href="#"><img src="images/icons/close.png"></a>
+        <h2>Выберите камень</h2>
+        <div class="img_wrap">
+    <?php 
+    $stoneGellary = new ChangPicture();
+    $stoneGellary->changePicture("images/StoneColors");
+    ?>
+        </div>
+    </div>
    <script>
-    var point;  
+    var point;
+    var poPUPName //The name of popup tag for removing it after a color was chosen
     $(document).ready(function (){
              $('a.popUPS').click(function(){
              var i = $(this).attr("rel");
+                popUPName = i;            
+                $('div.'+ i).fadeIn(900);
+              $("body").append("<div id='overlay'></div>");
+                        
              point = $(this).attr('id');
-             $('div.'+i).fadeIn(900);
+             //$('div.'+i).fadeIn(900);
               //console.log(point);
           
              
-          $("body").append("<div id='overlay'></div>");
+         // $("body").append("<div id='overlay'></div>");
           //$("#overlay").show().css();
           
           return false;
          // console.log(i);
-         
+            
           });
           $('a.close').click(function () {
 		$(this).parent().fadeOut(100);
 		$('#overlay').remove('#overlay');
-		return false;
+                return false;
 	});
        })   
     </script>
